@@ -5,7 +5,7 @@ import java.util.List;
 public class Dictionary {
     private String chatId;
     private String dictionaryName;
-    private List<CombinationWord> combinationWordList;
+    private List<LinguisticUnit> linguisticUnitList;
 
     public Dictionary(String chatId, String dictionaryName) {
         super();
@@ -13,11 +13,11 @@ public class Dictionary {
         this.dictionaryName = dictionaryName;
     }
 
-    public Dictionary(String chatId, String dictionaryName, List<CombinationWord> combinationWordList) {
+    public Dictionary(String chatId, String dictionaryName, List<LinguisticUnit> linguisticUnitList) {
         super();
         this.chatId = chatId;
         this.dictionaryName = dictionaryName;
-        this.combinationWordList = combinationWordList;
+        this.linguisticUnitList = linguisticUnitList;
     }
 
     public String getChatId() {
@@ -36,12 +36,12 @@ public class Dictionary {
         this.dictionaryName = dictionaryName;
     }
 
-    public List<CombinationWord> getTranslationList() {
-        return combinationWordList;
+    public List<LinguisticUnit> getTranslationList() {
+        return linguisticUnitList;
     }
 
-    public void setTranslationList(List<CombinationWord> combinationWordList) {
-        this.combinationWordList = combinationWordList;
+    public void setTranslationList(List<LinguisticUnit> linguisticUnitList) {
+        this.linguisticUnitList = linguisticUnitList;
     }
 
     @Override

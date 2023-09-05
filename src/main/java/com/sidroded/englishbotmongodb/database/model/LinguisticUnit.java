@@ -2,11 +2,11 @@ package com.sidroded.englishbotmongodb.database.model;
 
 import java.util.Objects;
 
-public class CombinationWord {
+public class LinguisticUnit {
     private String word;
     private String translation;
 
-    public CombinationWord(String word, String translation) {
+    public LinguisticUnit(String word, String translation) {
         this.word = word;
         this.translation = translation;
     }
@@ -31,7 +31,7 @@ public class CombinationWord {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        CombinationWord that = (CombinationWord) o;
+        LinguisticUnit that = (LinguisticUnit) o;
         return word.equals(that.word);
     }
 

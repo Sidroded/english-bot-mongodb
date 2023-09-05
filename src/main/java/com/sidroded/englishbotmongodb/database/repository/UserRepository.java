@@ -12,7 +12,7 @@ import java.util.List;
 public interface UserRepository extends MongoRepository<User, String> {
 
     @Query("{chatId:'?0'}")
-    Dictionary findDictionariesByChatId(String chatId);
+    Dictionary findUserByChatId(String chatId);
 
     @Override
     List<User> findAll();

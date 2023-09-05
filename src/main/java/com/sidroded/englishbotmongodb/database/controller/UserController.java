@@ -18,9 +18,8 @@ public class UserController {
         this.userRepository = userRepository;
     }
 
-    public void saveData() {
-        userRepository.save(new User("chat", "daniil"));
-        userRepository.save(new User("chat", "asdsa"));
+    public void saveUser(User user) {
+        userRepository.save(user);
     }
 
     public List<User> getData() {
