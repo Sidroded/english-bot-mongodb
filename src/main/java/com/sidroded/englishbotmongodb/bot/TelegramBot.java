@@ -2,6 +2,7 @@ package com.sidroded.englishbotmongodb.bot;
 
 import com.sidroded.englishbotmongodb.bot.command.StartCommand;
 import com.sidroded.englishbotmongodb.bot.config.BotConfig;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.objects.Update;
@@ -16,7 +17,8 @@ public class TelegramBot extends TelegramLongPollingBot {
 
     private final BotConfig botConfig;
 
-    private final StartCommand startCommand = new StartCommand();
+    @Autowired
+    StartCommand startCommand;
 
     @Override
     public String getBotUsername() {

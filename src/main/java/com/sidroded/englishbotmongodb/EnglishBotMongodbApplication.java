@@ -9,5 +9,4 @@ public class EnglishBotMongodbApplication {
     public static void main(String[] args) {
         SpringApplication.run(EnglishBotMongodbApplication.class, args);
     }
-
 }
