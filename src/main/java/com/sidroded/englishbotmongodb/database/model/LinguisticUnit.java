@@ -6,6 +6,10 @@ public class LinguisticUnit {
     private String word;
     private String translation;
 
+    public LinguisticUnit() {
+
+    }
+
     public LinguisticUnit(String word, String translation) {
         this.word = word;
         this.translation = translation;

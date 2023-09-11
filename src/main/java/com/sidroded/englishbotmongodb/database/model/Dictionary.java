@@ -7,6 +7,9 @@ public class Dictionary {
     private String dictionaryName;
     private List<LinguisticUnit> linguisticUnitList;
 
+    public Dictionary() {
+    }
+
     public Dictionary(String chatId, String dictionaryName) {
         super();
         this.chatId = chatId;
@@ -36,7 +39,7 @@ public class Dictionary {
         this.dictionaryName = dictionaryName;
     }
 
-    public List<LinguisticUnit> getTranslationList() {
+    public List<LinguisticUnit> getLinguisticUnitList() {
         return linguisticUnitList;
     }
 
